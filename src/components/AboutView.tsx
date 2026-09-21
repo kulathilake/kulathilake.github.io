@@ -1,6 +1,5 @@
 import React from 'react';
 import portraitImg from '../assets/images/profile_portrait_1790013893009.jpg';
-import { PUBLICATIONS } from '../data/repositories';
 
 interface AboutViewProps {
   onOpenContact: () => void;
@@ -16,20 +15,16 @@ export const AboutView: React.FC<AboutViewProps> = ({ onOpenContact }) => {
             About Shehan Kulathilake
           </h1>
           <p className="text-[17px] font-medium text-[#333333]">
-            Computer scientist investigating cache-conscious graph systems, memory-efficient data structures, and edge intelligence.
+            Technical Lead at Sysco LABS in Colombo, Sri Lanka, building software systems and helping engineering teams deliver dependable products.
           </p>
           <p>
-            Graph of efficient graph traversal algorithms in large datasets, with increasing populations
-            for re-enhancing consensus-continuum. Data mentorship, with an emphasis on research-computational
-            synergy, to build a lineation of efficient algorithms in large datasets.
+            I have grown from a Junior Software Engineer into technical leadership through work across full-stack web development, distributed team collaboration, and modern application platforms.
           </p>
           <p>
-            Shehan Kulathilake’s research and experiments focus on developing these scalable solutions, as mentioned,
-            to modern programming methods, high-performance distributed graph processing, and hardware-in-the-loop
-            neural architecture searches.
+            My professional interests include thoughtful system design, practical engineering mentorship, and turning complex technical requirements into maintainable software.
           </p>
           <p>
-            My work is motivated by a simple design principle: high performance arises from understanding physical hardware limits—memory hierarchies, cache lines, and bus bandwidth—rather than relying on abstract runtime magic.
+            Alongside my professional work, I am pursuing a Master's degree in Computer Science at the University of Colombo School of Computing.
           </p>
 
           <div className="pt-2">
@@ -37,10 +32,10 @@ export const AboutView: React.FC<AboutViewProps> = ({ onOpenContact }) => {
               Research Interests
             </h3>
             <ul className="list-disc list-inside space-y-1 text-[15.5px] text-[#333333] font-sans">
-              <li>High-throughput graph traversal algorithms (BFS, DFS, PageRank, Betweenness)</li>
-              <li>Distributed vertex-cut and edge-cut partitioning frameworks</li>
-              <li>Cache-line aligned and SIMD-accelerated search trees</li>
-              <li>Quantized embedded model architectures on microcontrollers</li>
+              <li>Technical leadership and engineering mentorship</li>
+              <li>Full-stack web application development</li>
+              <li>System design and maintainable software architecture</li>
+              <li>Developer productivity and reliable delivery</li>
             </ul>
           </div>
         </div>
@@ -63,25 +58,62 @@ export const AboutView: React.FC<AboutViewProps> = ({ onOpenContact }) => {
         </div>
       </div>
 
-      {/* Selected Publications Section */}
+      {/* Resume Section */}
       <section className="pt-6 border-t border-[#e5e3dc]">
         <h2 className="text-2xl font-bold text-[#111111] tracking-tight mb-6">
-          Selected Publications
+          Resume
         </h2>
-        <div className="space-y-6">
-          {PUBLICATIONS.map((pub, idx) => (
-            <div key={idx} className="space-y-1">
-              <div className="text-[17px] font-bold text-[#111111]">
-                {pub.title}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+          <div>
+            <h3 className="text-xl font-bold text-[#111111] mb-3">Experience</h3>
+            <div className="space-y-5 font-sans">
+              <div>
+                <div className="text-[17px] font-bold text-[#111111]">Technical Lead</div>
+                <div className="text-[15px] text-[#444444]">Sysco LABS Sri Lanka</div>
+                <div className="text-[13.5px] text-[#666666]">Sep 2026 - Present</div>
               </div>
-              <div className="text-[14.5px] text-[#444444] font-sans">
-                {pub.authors}
+              <div>
+                <div className="text-[17px] font-bold text-[#111111]">Associate Technical Lead</div>
+                <div className="text-[15px] text-[#444444]">Sysco LABS Sri Lanka</div>
+                <div className="text-[13.5px] text-[#666666]">Aug 2024 - Sep 2026</div>
               </div>
-              <div className="text-[13.5px] text-[#666666] font-sans italic">
-                {pub.venue} ({pub.year})
+              <div>
+                <div className="text-[17px] font-bold text-[#111111]">Senior Software Engineer</div>
+                <div className="text-[15px] text-[#444444]">Sysco LABS Sri Lanka</div>
+                <div className="text-[13.5px] text-[#666666]">Nov 2022 - Aug 2024</div>
+              </div>
+              <div>
+                <div className="text-[17px] font-bold text-[#111111]">Software Engineer</div>
+                <div className="text-[15px] text-[#444444]">Sysco LABS Sri Lanka</div>
+                <div className="text-[13.5px] text-[#666666]">Jan 2022 - Oct 2022</div>
+              </div>
+              <div>
+                <div className="text-[17px] font-bold text-[#111111]">Software Engineer</div>
+                <div className="text-[15px] text-[#444444]">EC | Elysian Crest</div>
+                <div className="text-[13.5px] text-[#666666]">Apr 2020 - Dec 2021</div>
+              </div>
+              <div>
+                <div className="text-[17px] font-bold text-[#111111]">Junior Software Engineer</div>
+                <div className="text-[15px] text-[#444444]">Eyepax</div>
+                <div className="text-[13.5px] text-[#666666]">Feb 2020 - Apr 2020</div>
               </div>
             </div>
-          ))}
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-[#111111] mb-3">Education</h3>
+            <div className="space-y-5 font-sans">
+              <div>
+                <div className="text-[17px] font-bold text-[#111111]">Master's degree, Computer Science</div>
+                <div className="text-[15px] text-[#444444]">University of Colombo School of Computing</div>
+                <div className="text-[13.5px] text-[#666666]">Jan 2023 - Present</div>
+              </div>
+              <div>
+                <div className="text-[17px] font-bold text-[#111111]">Bachelor's degree, Information Systems</div>
+                <div className="text-[15px] text-[#444444]">University of Colombo School of Computing</div>
+                <div className="text-[13.5px] text-[#666666]">Jan 2017 - Feb 2020</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
