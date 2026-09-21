@@ -1,0 +1,6 @@
+{
+  "name": "Shehan Kulathilake: Research Notes & Personal Blog",
+  "description": "A clean, minimalist personal blog and computational research notebook by Shehan Kulathilake featuring graph algorithms, distributed systems, and embedded notes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
